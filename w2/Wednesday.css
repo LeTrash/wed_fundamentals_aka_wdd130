@@ -2,8 +2,13 @@
   color: blue;
   background-color: aqua;
   text-align: center;
-  margin-top: 300px;
+  /* margin: top+bottom, right+left */
+  margin: 0 10%px;
   font-family: Georgia;
   padding: 10px;
+  display: block;
+  border: 3px solid rgb(25, 2, 61);
+  /* rounds corners. Higher the number bigger the curve */
+  border-radius: 20px;
 }
 /* hover over colorbox to get specfic hues and change opacity */
