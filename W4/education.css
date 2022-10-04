@@ -1,0 +1,29 @@
+header {
+  color: white;
+  background-color: pink;
+  margin: 0 auto;
+  text-align: center;
+}
+
+nav {
+  color: white;
+  line-height: 3em;
+  font-size: 1.2em;
+}
+nav {
+  list-style-type: none;
+  display: flex;
+}
+
+nav:hover {
+  color: var(black);
+}
+
+quote {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+img {
+  height: 200px;
+}
