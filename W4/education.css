@@ -1,29 +1,81 @@
 header {
   color: white;
-  background-color: pink;
   margin: 0 auto;
+  text-align: center;
+  font-family: "Trebuchet MS";
+  font-size: large;
+  font-weight: bold;
+}
+
+body {
+  background-color: #fca6c9;
+  margin: auto;
+  text-align: center;
+  max-width: auto 0;
+}
+
+main {
+  color: black;
+  font-family: "Trebuchet MS";
   text-align: center;
 }
 
-nav {
+#smallquote {
   color: white;
-  line-height: 3em;
-  font-size: 1.2em;
+  font-family: "Times New Roman";
+  display: block;
+  text-align: center;
+  font-size: small;
+  max-width: 350px;
 }
-nav {
-  list-style-type: none;
-  display: flex;
-}
-
-nav:hover {
-  color: var(black);
-}
-
-quote {
+#bigquote {
   color: white;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Times New Roman", serif;
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-size: 40px;
+  max-width: 350px;
 }
-
 img {
   height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+
+#BUTTON {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+#BUTTON:hover {
+  color: black;
+}
+
+#content {
+  text-align: center;
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+  font-family: "Trebuchet MS";
+  font-size: smaller;
+  line-height: 20%;
+  margin-top: 25px;
+  font-weight: bold;
+  max-width: 350px;
+}
+
+#list {
+  display: block;
+  text-align: left;
+  margin: 0 auto;
+  font-weight: bold;
+  line-height: 200%;
+  margin-bottom: 25px;
+  max-width: 380px;
+  font-size: small;
 }
