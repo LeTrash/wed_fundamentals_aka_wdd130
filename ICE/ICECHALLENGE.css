@@ -1,0 +1,49 @@
+body {
+  margin: 0 auto;
+  padding: 0 auto;
+  box-sizing: border-box;
+  background: #737373;
+}
+
+#stupid {
+  background-image: url(./w05_circles.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  width: 100%;
+  height: 75%;
+}
+
+.column {
+  float: center;
+  width: 25%;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.round {
+  border-radius: 50%;
+  border: 15px solid #444444;
+  text-align: center;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 25%;
+  padding: 5px;
+  width: 33.3%;
+  padding-left: 70px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}

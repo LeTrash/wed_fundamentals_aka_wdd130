@@ -1,0 +1,23 @@
+body {
+  text-align: center;
+  padding: 20px;
+}
+
+#t {
+  background-color: red;
+  width: 300px;
+  margin: 0 auto;
+}
+#m {
+  background-color: blue;
+  width: 500px;
+  margin: 0 auto;
+}
+#b {
+  background-color: green;
+  padding-block: 50px;
+  margin: 0 auto;
+}
+div {
+  background-color: purple;
+}
