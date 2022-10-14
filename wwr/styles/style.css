@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Sigmar+One&display=swap");
+
 #content {
   max-width: 1600px;
   margin: 0 auto;
@@ -6,7 +8,8 @@
 nav a {
   text-decoration: none;
   text-align: center;
-  color: #154715;
+  color: #6ab547;
+  padding: 35px;
 }
 #hero-msg h1 {
   text-align: center;
@@ -25,25 +28,39 @@ main section {
 }
 body {
   background-color: #fae960;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
 }
 header {
   background-color: #154715;
 }
 nav a:hover {
   color: #fae960;
-  background-color: #eb6e2c;
+  background-color: #6ab547;
+  padding: 35px;
 }
 .book {
   text-align: center;
   text-decoration: none;
   color: #eb6e2c;
   background-color: #fae960;
+  font-family: "Sigmar One";
+  font-size: 18px;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
 }
 .join {
   text-align: center;
   text-decoration: none;
   color: #fae960;
   background-color: #154715;
+  font-family: "Sigmar One";
+  font-size: 18px;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
 }
 .book:hover {
   color: #154715;
@@ -59,22 +76,34 @@ nav a:hover {
 .msg {
   color: #eb6e2c;
   background-color: #154715;
+  line-height: 1.5em;
+  padding-bottom: 15px;
 }
 footer {
   color: #154715;
   background-color: #6ab547;
+  padding: 25px 50px;
+  margin-top: 200px;
 }
 .home-title {
   color: #154715;
+  font-family: "Sigmar One";
+  font-size: 2em;
+  margin-top: 10px;
 }
 h4 {
   color: #154715;
+  font-family: "Lato";
+  text-align: center;
 }
 .msg h2 {
   color: #fae960;
+  font-family: "Sigmar One";
 }
 .msg p {
   color: #fae960;
+  font-family: "lato";
+  font-size: 0.8em;
 }
 footer a {
   text-align: center;
@@ -86,6 +115,7 @@ footer a:hover {
 }
 .icon {
   width: 80px;
+  padding-top: 10px;
 }
 .logo {
   width: 80px;
@@ -100,4 +130,38 @@ footer p {
 }
 footer p a:hover {
   text-decoration: underline;
+}
+
+.home-grid {
+  font-family: "Sigmar One";
+}
+
+h2 {
+  margin: 0;
+}
+
+#logo_link {
+  padding-top: 5px;
+}
+
+footer .social img {
+  padding-top: 15px;
+}
+
+.rivers-card,
+.rapids-card,
+.camping-card {
+  margin: 200px 0;
+}
+
+.card-img {
+  border: 10px solid #154715;
+}
+main section img {
+  box-sizing: border-box;
+}
+.rivers-card,
+.rapids-card,
+.camping-card {
+  color: #eb6e2c;
 }
