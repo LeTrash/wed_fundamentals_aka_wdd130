@@ -6,7 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Health Page</title>
     <link rel="stylesheet" href="./styles/stylehome.css" />
+    <style>
+      .accordion {
+        background-color: #101d42;
+        color: #ffda90;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+      }
+
+      .active,
+      .accordion:hover {
+        background-color: #1f487e;
+        color: #1b9aaa;
+      }
+
+      .panel {
+        color: #1b9aaa;
+        padding: 0 18px;
+        background-color: #1f487e;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+      }
+    </style>
   </head>
+
   <body>
     <div class="contentt">
       <header id="bruh">
@@ -27,7 +57,11 @@
       </header>
 
       <main>
-        <div id="mental">
+        <h2>Mental and Physical Health Resources</h2>
+        <p>Click on the buttons to open the collapsible content.</p>
+
+        <button class="accordion">Physical</button>
+        <div class="panel">
           <section id="h1">
             <img src="./images/wellnessbaby.jpg" alt="WellnessIMG" />
 
@@ -40,6 +74,37 @@
               also there. Feel free to walk in with any question at hand!
             </p>
           </section>
+
+          <section id="h4">
+            <img />
+            <a class="wellenss" href="https://www.byui.edu/wellness-center/"
+              >Wellness Center</a
+            >
+            <p>
+              Located on the first floor of the Hart building resides the
+              Wellness center. They over several serivcies that are either free
+              or below $30 such as a Wellness Assessment, Nutrition Consultaion,
+              Fitness Consultation, Cholesterol Screening, an Inbody test, and
+              Bioimpedance analysis. They also have programs such as Fit4Life
+              and THRIVE: Mental Wellness.
+            </p>
+          </section>
+
+          <section id="h5">
+            <a class="wellness" href="https://campusrec.byui.edu/"
+              >Campus Recreation</a
+            >
+            <p>
+              Here you can search for programs that are either free or under
+              $10.They have Fitness classes, Emotional health workshops,
+              wellness workshops, more! The best thing to do is search around
+              and explore what is available.
+            </p>
+          </section>
+        </div>
+
+        <button class="accordion">Mental</button>
+        <div class="panel">
           <section id="h2">
             <img />
             <a
@@ -56,8 +121,6 @@
             </p>
           </section>
 
-          <img />
-
           <section id="h3">
             <img src="./images/TAO_logo.png" alt="TAOIMG" />
             <a
@@ -70,23 +133,8 @@
               those alike to educate and better themselves on mental health.
             </p>
           </section>
-          <img />
-          <section id="h4">
-            <img />
-            <a class="wellenss" href="https://www.byui.edu/wellness-center/"
-              >Wellness Center</a
-            >
-            <p>
-              Located on the first floor of the Hart building resides the
-              Wellness center. They over several serivcies that are either free
-              or below $30 such as a Wellness Assessment, Nutrition Consultaion,
-              Fitness Consultation, Cholesterol Screening, an Inbody test, and
-              Bioimpedance analysis. They also have programs such as Fit4Life
-              and THRIVE: Mental Wellness.
-            </p>
-          </section>
+
           <section id="h5">
-            <img />
             <a class="wellness" href="https://campusrec.byui.edu/"
               >Campus Recreation</a
             >
@@ -97,6 +145,7 @@
               and explore what is available.
             </p>
           </section>
+
           <section id="h6">
             <img src="./images/gym.jpg" alt="hartgymIMG" />
             <a
@@ -110,18 +159,40 @@
               provide resources for emotional needs and for escaping abuse.
             </p>
           </section>
-
-          <section id="search">
-            <p>
-              Still lost? Try out the search bar on BYU-I's own website. I've
-              used it a lot myself and it'll help you find several links!
-            </p>
-            <img src="./images/fliparrow.png" alt="arrow" />
-            <img src="./images/searchabr.png" alt="searchbar" />
-          </section>
         </div>
 
-        <img src="./images/htepy.jpg" alt="inspriationIMG" />
+        <button class="accordion">Phone Number resources</button>
+        <div class="panel">
+          <img src="./images/htepy.jpg" alt="inspriationIMG" />
+
+          <p>Suicide Hotline</p>
+        </div>
+
+        <script>
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+
+          for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+              this.classList.toggle("active");
+              var panel = this.nextElementSibling;
+              if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+              } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+              }
+            });
+          }
+        </script>
+
+        <section id="search">
+          <p>
+            Still lost? Try out the search bar on BYU-I's own website. I've used
+            it a lot myself and it'll help you find several links!
+          </p>
+          <img src="./images/fliparrow.png" alt="arrow" />
+          <img src="./images/searchabr.png" alt="searchbar" />
+        </section>
 
         <div id="note">
           <p>

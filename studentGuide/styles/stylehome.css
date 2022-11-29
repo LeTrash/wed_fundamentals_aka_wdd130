@@ -14,18 +14,21 @@ main img {
 }
 
 header {
+  display: flex;
   background-color: #101d42;
 }
 
 #logo_link {
   justify-self: center;
   align-self: center;
-  background-color: #101d42;
+  background-color: transparent;
 }
 
-.logo {
+#logo {
+  float: center;
   padding-top: 2px;
   width: 150px;
+  background-color: transparent;
 }
 
 #bruh nav a {
@@ -86,7 +89,49 @@ body {
 }
 
 #mainboi {
+  padding: 20px;
   background-color: #1f487e;
+  display: grid;
+  grid-template-rows: repeat(3, 500px);
+}
+
+#aca,
+#fin,
+#tips {
+  grid-column: 1;
+}
+
+#act,
+#hea {
+  grid-column: 2;
+}
+
+#fin {
+  grid-row: 2/3;
+}
+
+#act {
+  grid-row: 2;
+}
+
+#tips {
+  grid-row: 4;
+}
+
+#hea {
+  grid-row: 3 / end;
+}
+
+.sahowimg {
+  border: 10px solid #101d42;
+  width: 90%;
+  transition: transform 0.5s;
+  box-shadow: 5px 5px 10px #101d42;
+}
+
+.sahowimg:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
 }
 
 .contentt a:hover {
