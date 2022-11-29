@@ -31,6 +31,10 @@ header {
   background-color: transparent;
 }
 
+#bruh img {
+  width: 150px;
+}
+
 #bruh nav a {
   text-decoration: none;
   text-align: center;
