@@ -26,6 +26,9 @@ header {
   width: 200px;
   display: block;
   margin: 0 auto;
+  z-index: 1;
+  position: absolute;
+  top: 50px;
 }
 
 #logo {
@@ -79,7 +82,7 @@ body {
 }
 
 #confused {
-  padding: 15px;
+  padding: 15px 15px 15px 50%;
   text-align: center;
 }
 
@@ -147,16 +150,24 @@ main a:hover {
 #proph {
   background-color: #1f487e;
   align-items: center;
-  padding: 10px;
+}
+
+#proph a {
+  height: 40px;
+  margin-top: 500px;
+  margin-right: 3%;
+  float: left;
+  z-index: 1;
 }
 
 #proph img {
-  float: left;
   width: 500px;
   height: 394px;
   object-fit: cover;
   object-position: 50% 0;
-  border: 10px solid #101d42;
+  border: 10px inset #ffda90;
+  margin-top: 127px;
+  margin-left: 1%;
 }
 
 #proph h2,
@@ -164,7 +175,11 @@ main a:hover {
   color: #101d42;
   text-align: center;
   flex-wrap: wrap;
+  width: fit-content;
+  margin: 10px auto;
   background-color: #1b9aaa;
+  border: 10px inset #ffda90;
+  padding: 20px;
 }
 
 #yote h2 {
@@ -172,8 +187,12 @@ main a:hover {
 }
 
 #yote {
-  display: block;
+  display: flex;
   margin: 0 auto;
+}
+
+#stuff {
+  padding-left: 10px;
 }
 
 footer {
@@ -222,15 +241,16 @@ footer a {
 }
 
 #search {
-  height: 300px;
   display: block;
   margin: 30px;
+  margin-left: 15%;
 }
 
 #search p {
   padding: 20px;
   width: 50%;
   background-color: #1b9aaa;
+  margin: auto 20px;
 }
 
 #arrow {
@@ -240,5 +260,5 @@ footer a {
 }
 
 #bar {
-  width: 60%;
+  width: 060%;
 }
