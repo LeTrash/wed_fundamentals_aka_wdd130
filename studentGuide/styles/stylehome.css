@@ -10,7 +10,6 @@
 }
 
 main img {
-  width: 400px;
   box-sizing: border-box;
 }
 
@@ -20,10 +19,8 @@ header {
   background-color: #101d42;
   height: 170px;
   width: 100%;
-}
-
-header h1 {
-  margin-left: 50%;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 #logo_link {
@@ -51,20 +48,20 @@ header h1 {
   color: #ffda90;
   background-color: #101d42;
   display: block;
-  padding: 15px;
+  padding: 10px;
 }
 
 #bruh nav {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  margin-left: 50%;
+  margin-left: 32%;
 }
 
 #bruh nav a:hover {
   color: #1b9aaa;
   background-color: #1f487e;
-  padding: 15px;
+  padding: 10px;
 }
 
 #background {
@@ -74,6 +71,7 @@ header h1 {
 
 body p {
   font-family: news gothic, sans-serif;
+  color: #101d42;
 }
 
 body {
@@ -107,46 +105,49 @@ main a:hover {
 }
 
 #mainboi {
-  padding: 20px;
   background-color: #1f487e;
   display: grid;
-  grid-template-rows: repeat(3, 300px);
+  grid-template-rows: repeat(14, 100px);
+  grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
   align-items: end;
   justify-items: center;
-  height: 1150px;
+  height: 1400px;
 }
 
 #aca,
-#fin,
-#tips {
-  grid-column: 1;
+#fin {
+  grid-column: 2/3;
 }
 
 #act,
 #hea {
-  grid-column: 2;
+  grid-column: 4/5;
 }
 
-#fin {
-  grid-row: 3;
-}
-
-#act {
-  grid-row: 3;
-}
-
-#tips {
+#aca {
   grid-row: 4;
 }
 
 #hea {
-  grid-row: 2;
+  grid-row: 7;
+}
+
+#fin {
+  grid-row: 11;
+}
+
+#act {
+  grid-row: 11/12;
+}
+
+#tips {
+  grid-row: 12/14;
+  grid-column: 2/5;
 }
 
 .sahowimg {
   border: 10px outset #101d42;
-  width: 90%;
-  width: 400px;
+  width: 450px;
 }
 
 #huh {
