@@ -14,20 +14,23 @@
         padding: 18px;
         width: 100%;
         border: none;
-        text-align: left;
+        text-align: center;
         outline: none;
-        font-size: 15px;
+        font-size: 22px;
         transition: 0.4s;
       }
 
-      .active,
+      .active {
+        background-color: #101d42;
+        color: #ffda90;
+      }
       .accordion:hover {
         background-color: #1f487e;
         color: #1b9aaa;
       }
 
       .panel {
-        color: #1b9aaa;
+        color: #ffda90;
         padding: 0 18px;
         background-color: #1f487e;
         max-height: 0;
@@ -66,8 +69,6 @@
         <button class="accordion">Physical</button>
         <div class="panel">
           <section id="h1">
-            <img src="./images/wellnessbaby.jpg" alt="WellnessIMG" />
-
             <a class="healthcenter" href="https://www.byui.edu/health-center/"
               >Health Center</a
             >
@@ -77,9 +78,9 @@
               also there. Feel free to walk in with any question at hand!
             </p>
           </section>
+          <img src="./images/wellnessbaby.jpg" alt="WellnessIMG" />
 
           <section id="h4">
-            <img />
             <a class="wellenss" href="https://www.byui.edu/wellness-center/"
               >Wellness Center</a
             >
@@ -109,7 +110,6 @@
         <button class="accordion">Mental</button>
         <div class="panel">
           <section id="h2">
-            <img />
             <a
               class="healthcenter"
               href="https://www.byui.edu/counseling-center/"
@@ -164,11 +164,33 @@
           </section>
         </div>
 
-        <button class="accordion">Phone Number resources</button>
+        <button class="accordion">Phone Number Resources</button>
         <div class="panel">
           <img src="./images/htepy.jpg" alt="inspriationIMG" />
 
-          <p>Suicide Hotline</p>
+          <section id="h7">
+            <a class="resources" href="https://idahocrisis.org/"
+              >Idaho Suicide Prevention hotline</a
+            >
+            <p>Call 208-398-4357 [HELP]</p>
+            <p>Available 24/7, FREE, and confidental</p>
+            <p>
+              Open to helping a friend, a loved one, or even yourself. All are
+              welcome to use this hotline, regardless of suicidal tendencies .
+            </p>
+          </section>
+
+          <section id="h8">
+            <a class="resources" href="https://www.911.gov/"
+              >Life-Threatening Emergencies</a
+            >
+            <p>Call 911</p>
+          </section>
+          <a class="resources" href="https://www.byui.edu/counseling-center/"
+            >BYU-I Counseling-Center Appointments</a
+          >
+          <p>Call 208-496-9370</p>
+          <section id="h9"></section>
         </div>
 
         <script>
@@ -214,6 +236,7 @@
 
       <footer>
         <p>Student Guide &copy; 2022 - Jessica Clark</p>
+        <p>Images courtesy of Lexie Stout and Jessica Clark</p>
         <p><a href="site-plan-rafting.html">Site Plan</a></p>
         <p><a href="./styles/contactus.html">Contact Us</a></p>
         <div class="social">

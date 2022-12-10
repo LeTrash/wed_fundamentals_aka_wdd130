@@ -7,6 +7,7 @@
   max-width: 1600px;
   margin: 0 auto;
   text-align: center;
+  color: #101d42;
 }
 
 main img {
@@ -280,4 +281,8 @@ footer a {
   border: 10px inset #1f487e;
   background-color: #101d42;
   color: #ffda90;
+}
+
+.panel {
+  text-align: center;
 }
