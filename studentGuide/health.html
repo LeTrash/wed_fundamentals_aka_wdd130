@@ -24,6 +24,7 @@
         background-color: #101d42;
         color: #ffda90;
       }
+
       .accordion:hover {
         background-color: #1f487e;
         color: #1b9aaa;
@@ -36,6 +37,30 @@
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.2s ease-out;
+      }
+
+      .accordion span:target ~ .panel {
+        display: block;
+        height: auto;
+        padding-bottom: 25px;
+        padding-top: 10px;
+      }
+
+      #tao {
+        padding: 20px;
+      }
+
+      #phys,
+      #ment,
+      #numb {
+        display: block;
+        padding: 30px 15%;
+      }
+
+      #phys img,
+      #numb img {
+        width: 550px;
+        border: 10px outset #101d42;
       }
     </style>
   </head>
@@ -68,129 +93,177 @@
 
         <button class="accordion">Physical</button>
         <div class="panel">
-          <section id="h1">
-            <a class="healthcenter" href="https://www.byui.edu/health-center/"
-              >Health Center</a
-            >
-            <p>
-              Located beside the Kimball and Hinkley building. There to aid with
-              all your sickly matters! The office for BYU-I student insurance is
-              also there. Feel free to walk in with any question at hand!
-            </p>
-          </section>
-          <img src="./images/wellnessbaby.jpg" alt="WellnessIMG" />
+          <div id="phys">
+            <section id="h0">
+              <a class="healthcenter" href="https://www.byui.edu/health-center/"
+                >Health Center</a
+              >
+              <p>
+                Located beside the Kimball and Hinkley building. There to aid
+                with all your sickly matters! They are happy to schedule a check
+                up or blood test with a quick responsie. No need to wait 3
+                months for an appointment. Their pharmcy is useful for picking
+                up medication after your classes have ended. The office for
+                BYU-I student insurance is also there. Feel free to walk in with
+                any question at hand!
+              </p>
+            </section>
+            <img src="./images/wellnessbaby.jpg" alt="WellnessIMG" />
 
-          <section id="h4">
-            <a class="wellenss" href="https://www.byui.edu/wellness-center/"
-              >Wellness Center</a
-            >
-            <p>
-              Located on the first floor of the Hart building resides the
-              Wellness center. They over several serivcies that are either free
-              or below $30 such as a Wellness Assessment, Nutrition Consultaion,
-              Fitness Consultation, Cholesterol Screening, an Inbody test, and
-              Bioimpedance analysis. They also have programs such as Fit4Life
-              and THRIVE: Mental Wellness.
-            </p>
-          </section>
+            <section id="h4">
+              <a class="wellenss" href="https://www.byui.edu/wellness-center/"
+                >Wellness Center</a
+              >
+              <p>
+                Located on the first floor of the Hart building resides the
+                Wellness center. They over several serivcies that are either
+                free or below $30 such as a Wellness Assessment, Nutrition
+                Consultaion, Fitness Consultation, Cholesterol Screening, an
+                Inbody test, and Bioimpedance analysis. They also have programs
+                such as Fit4Life and THRIVE: Mental Wellness.
+              </p>
+            </section>
 
-          <section id="h5">
-            <a class="wellness" href="https://campusrec.byui.edu/"
-              >Campus Recreation</a
-            >
-            <p>
-              Here you can search for programs that are either free or under
-              $10.They have Fitness classes, Emotional health workshops,
-              wellness workshops, more! The best thing to do is search around
-              and explore what is available.
-            </p>
-          </section>
+            <section id="h5">
+              <a class="wellness" href="https://campusrec.byui.edu/"
+                >Campus Recreation</a
+              >
+              <p>
+                Here you can search for programs that are either free or under
+                $10.They have Fitness classes, Emotional health workshops,
+                wellness workshops, more! The best thing to do is search around
+                and explore what is available.
+              </p>
+            </section>
+            <img src="./images/gym.jpg" alt="hartgymIMG" />
+            <section id="h7">
+              <a
+                class="wellness"
+                href="https://www.byui.edu/recreational-services/hart-building/fitness-center"
+                >Fitness Center</a
+              >
+              <p>
+                Within the Hart building, BYU-I provides a free gym open to all
+                students! They have a cardio section, circuit section, free
+                weights and machines. They can even provide a free trainer to
+                teach you how to properly exersice and use the machines. As long
+                as you have a valid I-Card and a BYU-I approved grey shirt you
+                can use their facility from 5:00 AM - 11:30 PM.
+              </p>
+            </section>
+            <section id="h11">
+              <a
+                class="wellness"
+                href="https://www.byui.edu/recreational-services/hart-building/swimming-pool"
+                >Swimming Pool</a
+              >
+              <p>
+                Yep, there's an actual swimming pool on campus. Inside of course
+                and open to public at certain times. The pool schedule lists
+                when it's open to the public, reserved for classes or activies.
+                However, there are quite a few fun activites that include the
+                pool that anyone can sign up for such as kayaking, Aerobics, and
+                water polo.
+              </p>
+            </section>
+          </div>
         </div>
 
         <button class="accordion">Mental</button>
         <div class="panel">
-          <section id="h2">
-            <a
-              class="healthcenter"
-              href="https://www.byui.edu/counseling-center/"
-              >Counseling Center</a
-            >
-            <p>
-              Located on the top floor of the Health Center! There you can
-              schedule an appointment to meet with one of their many counselors,
-              free to students as long as they currently take 6 credits. They
-              can also aid you with other health resources on campus such as
-              meeting with a dietician or applying for Medicaid.
-            </p>
-          </section>
+          <div id="ment">
+            <section id="h2">
+              <a
+                class="healthcenter"
+                href="https://www.byui.edu/counseling-center/"
+                >Counseling Center</a
+              >
+              <p>
+                Located on the top floor of the Health Center! There you can
+                schedule an appointment to meet with one of their many
+                counselors, free to students as long as they currently take 6
+                credits. They can also aid you with other health resources on
+                campus such as meeting with a dietician or applying for
+                Medicaid.
+              </p>
+            </section>
+            <img id="tao" src="./images/TAO_logo.png" alt="TAOIMG" />
 
-          <section id="h3">
-            <img src="./images/TAO_logo.png" alt="TAOIMG" />
-            <a
-              class="healthcenter"
-              href="https://www.byui.edu/counseling-center/tao"
-              >TAO</a
-            >
-            <p>
-              Therapy Assistance Online: An easy tool free to all students and
-              those alike to educate and better themselves on mental health.
-            </p>
-          </section>
+            <section id="h3">
+              <a
+                class="healthcenter"
+                href="https://www.byui.edu/counseling-center/tao"
+                >TAO</a
+              >
+              <p>
+                Therapy Assistance Online: An easy tool free to all students and
+                those alike to educate and better themselves on mental health.
+              </p>
+            </section>
 
-          <section id="h5">
-            <a class="wellness" href="https://campusrec.byui.edu/"
-              >Campus Recreation</a
-            >
-            <p>
-              Here you can search for programs that are either free or under
-              $10.They have Fitness classes, Emotional health workshops,
-              wellness workshops, more! The best thing to do is search around
-              and explore what is available.
-            </p>
-          </section>
+            <section id="h5">
+              <a class="wellness" href="https://campusrec.byui.edu/"
+                >Campus Recreation</a
+              >
+              <p>
+                Here you can search for programs that are either free or under
+                $10.They have Fitness classes, Emotional health workshops,
+                wellness workshops, more! The best thing to do is search around
+                and explore what is available.
+              </p>
+            </section>
 
-          <section id="h6">
-            <img src="./images/gym.jpg" alt="hartgymIMG" />
-            <a
-              class="wellness"
-              href="https://familycrisiscenter.wixsite.com/familycrisiscenter"
-              >Family Crisis Center</a
-            >
-            <p>
-              Located just by the Romance Theater on Main St. This lovely
-              organization provides several resources for anyone in need. They
-              provide resources for emotional needs and for escaping abuse.
-            </p>
-          </section>
+            <section id="h6">
+              <a
+                class="wellness"
+                href="https://familycrisiscenter.wixsite.com/familycrisiscenter"
+                >Family Crisis Center</a
+              >
+              <p>
+                Located just by the Romance Theater on Main St. This lovely
+                organization provides several resources for anyone in need. They
+                provide resources for emotional needs and for escaping abuse.
+              </p>
+            </section>
+          </div>
         </div>
 
         <button class="accordion">Phone Number Resources</button>
         <div class="panel">
-          <img src="./images/htepy.jpg" alt="inspriationIMG" />
+          <div id="numb">
+            <img src="./images/htepy.jpg" alt="inspriationIMG" />
 
-          <section id="h7">
-            <a class="resources" href="https://idahocrisis.org/"
-              >Idaho Suicide Prevention hotline</a
-            >
-            <p>Call 208-398-4357 [HELP]</p>
-            <p>Available 24/7, FREE, and confidental</p>
-            <p>
-              Open to helping a friend, a loved one, or even yourself. All are
-              welcome to use this hotline, regardless of suicidal tendencies .
-            </p>
-          </section>
+            <section id="h7">
+              <a class="resources" href="https://idahocrisis.org/"
+                >Idaho Suicide Prevention hotline</a
+              >
+              <p>Call 208-398-4357 [HELP]</p>
+              <p>Available 24/7, FREE, and confidental</p>
+              <p>
+                Open to helping a friend, a loved one, or even yourself. All are
+                welcome to use this hotline, regardless of suicidal tendencies
+              </p>
+            </section>
 
-          <section id="h8">
-            <a class="resources" href="https://www.911.gov/"
-              >Life-Threatening Emergencies</a
+            <section id="h8">
+              <a class="resources" href="https://www.911.gov/"
+                >Life-Threatening Emergencies</a
+              >
+              <p>Call 911</p>
+            </section>
+            <a class="resources" href="https://www.byui.edu/counseling-center/"
+              >BYU-I Counseling-Center Appointments</a
             >
-            <p>Call 911</p>
-          </section>
-          <a class="resources" href="https://www.byui.edu/counseling-center/"
-            >BYU-I Counseling-Center Appointments</a
-          >
-          <p>Call 208-496-9370</p>
-          <section id="h9"></section>
+            <p>Call 208-496-9370</p>
+            <section id="h9">
+              <a
+                class="resources"
+                href="https://www.byui.edu/disability-services/"
+                >Disability Services</a
+              >
+              <p>Call 208-496-9210</p>
+            </section>
+          </div>
         </div>
 
         <script>
