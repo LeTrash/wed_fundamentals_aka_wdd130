@@ -10,6 +10,7 @@
 }
 
 main img {
+  width: 400px;
   box-sizing: border-box;
 }
 
@@ -62,6 +63,7 @@ header {
   color: #1b9aaa;
   background-color: #1f487e;
   padding: 10px;
+  border-radius: 5px;
 }
 
 #background {
@@ -69,12 +71,13 @@ header {
   display: none;
 }
 
-body p {
+main {
   font-family: news gothic, sans-serif;
   color: #101d42;
 }
 
 body {
+  font-family: news gothic, sans-serif;
   background-color: #ffda90;
   font-size: 22px;
   margin: 0;
@@ -268,7 +271,7 @@ footer a {
 }
 
 #bar {
-  width: 060%;
+  width: 60%;
 }
 
 #note {
